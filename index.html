@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: auto;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #a8a3a3;
+  color: rgb(154, 20, 20);
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="C:\Users\jaise\Downloads\pexels_videos_1851190 (2160p).mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Jaise | Profile</title>
+</head>
+<div class="content">
+<body>
+  <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+
+  </div>
+  <nav>
+      
+      <a href="skills.html" class="pages" target = "_blank">SKILLS</a>
+      <a href="JAISE CV.pdf">RESUME</a>
+      <a href="eduction.html" class="pages" target = "_blank">EDUCATION</a>
+      <a href="contact.html" class="pages" target = "_blank">CONTACT</a>
+      
+  </nav>
+  <section class = "main">
+
+      <img src="C:\Users\jaise\Desktop\html practice\coat.jpg" alt="" class = "img">
+      <div class="intro" id = "home">
+          <h1>
+            I'm JAISE GEORGE 
+          </h1>
+          <p class="comm">
+              DATA SCIENTIST | Student
+          </p>
+      </div>
+  </section>
+
+  <footer id = "social">
+      <a href="https://instagram.com/_jaise_george?igshid=NzZlODBkYWE4Ng==" target = "_blank" class="icon">
+          <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://github.com/Jaise2002" target = "_blank" class="icon">
+          <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jaise-george-0422a1264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" target = "_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="" target = "_blank" class="icon">
+          <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="mailto:jaisegeorge02@gmail.com" class="icon" target = "_blank">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+
+  </footer>
+
+
+  <script src="plugins.js"></script>
+  <script src="window.js"></script>
+</body>
+</div> 
+                      
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
